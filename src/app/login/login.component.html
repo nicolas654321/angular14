@@ -1,0 +1,35 @@
+<div>
+  <label>Nom : </label>
+  <input type="text" [formControl]="username">
+</div>
+<div>
+  <label>Email : </label>
+  <input type="text" [formControl]="email">
+</div>
+<div>
+  <label>Mot de passe : </label>
+  <input type="text" [formControl]="motDePasse">
+</div>
+<div>
+  <label>Adresse : </label>
+  <input type="text" [formControl]="adresse">
+</div>
+<div>
+  <button (click)="valide()">Valider</button>
+</div>
+<div *ngIf="monUser.username!=''">
+  <div>
+    {{ monUser.username }}
+  </div>
+  <div>
+    {{ monUser.email }}
+  </div>
+  <div>
+    {{ monUser.motDePass }}
+  </div>
+  <div>
+    {{ monUser.adresse }}
+  </div>
+
+
+</div>
